@@ -1,0 +1,101 @@
+@import url(//fonts.googleapis.com/css?family=Vibur);
+html,body{
+  height:100%;
+  margin: 0;
+  background-color: #112;
+}
+
+header {
+  background-color: #112;
+}
+#cover {
+  background: #112 url(/assets/imgs/TJ2-bw.jpeg)  center no-repeat;
+  background-size:cover;
+  margin:50px 0 0 0;
+  height: 80vh;
+}
+
+#title {
+  position: relative;
+
+}
+#subtitle {
+  position: relative;
+}
+
+.neon, .neon2 {
+  text-align: center;
+  width: 65%;
+  height: 250px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  user-select: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .neon b, .neon2 b {
+    font: 400 6vh "Vibur" !important;
+  }
+}
+
+.neon b{
+  font: 400 10vh "Vibur";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #860d0d, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+.neon b span{
+  animation: blink linear infinite 2s;
+}
+.neon b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+
+.neon2 b{
+  font: 400 10vh "Vibur";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #a60eac, 0 0 0.5em #a41db6, 0 0 0.1em #4f0f74, 0 10px 3px #000;
+}
+.neon2 b span{
+  animation: blink linear infinite 4s;
+}
+.neon2 b span:nth-of-type(2){
+  animation: blink linear infinite 5s;
+}
+
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #333;
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
